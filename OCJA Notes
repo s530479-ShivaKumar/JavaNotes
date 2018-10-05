@@ -1,0 +1,41 @@
+Java features
+Data types
+Literals
+Array
+
+
+
+-----Data Types--------
+WE can give long value to a float variable
+
+long l = 1234;
+float f = l; // perfectly valid
+
+------Type casting---
+Implicit casting : smaller data type to bigger data type
+Widening or upcasting
+Explicit casting : Bigger type to smaller data type
+Narrowing or downcasting
+
+----Arrays----
+
+int[] x[] --Two dimensional array
+int[][] x --Two dimensional array
+int x[][] --Two dimensional array
+
+int[] []a,b -- a,b are Two dimensional arrays
+int[] a,b[] -- a-1,b-2 dimensional array
+int[] []a,[]b -- a-2,b- syntax error -- We can give dimension to only first variable by having [] "before" variable name
+----------------------------------------After variable name we can give dimensions.
+
+int[] x = new x[-5] -- Compiles successfully but run time error -- negative arraySize exception
+
+Difference between Array(java.lang) and Arrays(java.util.Arrays)
+Ex: Arrays.sort(arrayName)
+
+possible values for array declaration-- int[] x = new int[size]
+size can be only byte,short,char,int
+
+int[][] x = new int[][5] // Wrong
+int[][][] z = new int[3][][3] // Wrong base value must be there before giving size to next level array.
+
