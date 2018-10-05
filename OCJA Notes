@@ -39,3 +39,14 @@ size can be only byte,short,char,int
 int[][] x = new int[][5] // Wrong
 int[][][] z = new int[3][][3] // Wrong base value must be there before giving size to next level array.
 
+make sure difference between length vs length().
+---Anonymous Array--
+just used for instant purose, never goning to use again
+ex: new int[] {1,2,3,4}  // No name, just used for instant purpose, not able to use again as there is no name.
+
+* size and initilization should not be given
+ex: int[] x = new int[5]; // valid
+    int[] x = new int[] {1,2,3,4,5} // valid
+    int[] x = new int[5]{1,2,3,4,5} // Invalid
+
+
