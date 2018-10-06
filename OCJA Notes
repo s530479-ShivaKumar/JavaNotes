@@ -50,3 +50,5 @@ ex: int[] x = new int[5]; // valid
     int[] x = new int[5]{1,2,3,4,5} // Invalid
 
 
+String s;
+s.concat("shhiva") // Wrong --We cannot add or perform any operation on null like s.length();
