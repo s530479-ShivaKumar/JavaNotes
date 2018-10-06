@@ -52,3 +52,4 @@ ex: int[] x = new int[5]; // valid
 
 String s;
 s.concat("shhiva") // Wrong --We cannot add or perform any operation on null like s.length();
+Picture-- 1
