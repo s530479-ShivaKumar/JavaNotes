@@ -53,3 +53,38 @@ ex: int[] x = new int[5]; // valid
 String s;
 s.concat("shhiva") // Wrong --We cannot add or perform any operation on null like s.length();
 Picture-- 1
+
+------------------------------------------------------
+VAriables:
+Based on type of value-
+Primitive- variables holding primitive values
+Reference- variable holding objects
+Based on behaviour and place where it is declared
+1. Instance variables- If the value of a variable is different from object to object(Objet level variable).
+ex: class Student{
+    String name; // Instance variable
+    int rollNo; // instance variable
+    
+2. Static variable - If the vaue of a variable is same for different objects(Class level variable).
+video 13 and 14 most important.
+//static methodscannot be empty
+// We cannot access instant variables in static methods or blocks // most important
+
+3. Local variables
+// JVM will not provide default values to local variables. If not provided initilization compiler will give left and right only when we try to access it.
+// scope is between {}.
+
+--------Main method-------
+Public static void main(String[] args) // syntax JVMlooks for
+video 17 for main method
+
+-----Operators and assignments--------
+Increment and decrement operator cannot be applied on values and final variables // ++10 // Wrong ---- 
+final int x = 100
+x++ // compile time error
+if we want to use == operator the operands shuld have some relation i.e we have to check == for parent to child, child to parent or for same type objects
+student == teacher // compile tme error-- incomaprable typrs
+
+
+    
+    
