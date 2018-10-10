@@ -86,5 +86,42 @@ if we want to use == operator the operands shuld have some relation i.e we have 
 student == teacher // compile tme error-- incomaprable typrs
 
 
+-----------loop----------
+break statement can be used on only for, while or labelled block.
+conitnue is used only in loops
+
+video 24 and 25 problems
+
+------java source statements--------
+import statements:
+    1. Implicit import --> java.util.*
+    2. Explicit import --> java.util.ArrayList; // most recommended to use explicit
+ --> Performance is same for both imports, don't think it is good for implicit
+ 
+// In import statements the precedence for imported statements is explicit import -> Current working directory -> implicit import
+  Time         import statemet              fully qualified name
+compile time      more                          less
+run time         same                           same
+
+about packages:
+
+-1st statement should be a package statement in the program
+-Only 1 package statement is allowed in the program
+-empty program is a valid java program // we can compile it.
+-Any number of import statements are allowed in the program
+- Any number of classes, interfaces, enums, bastract classes are allowed in the program // order is not required.
+- order of statemtns should be package statement followed by import statement followed by classes or interfaces etc.
+
+
+Access modifiers
+Top level classes can use 
+1. public // Can be accessed from anywhere
+2. default // can be accessed only in current package
+3. abstract // we cannot create a object for this class
+4. final // we cannot extend this class
+5. strictfp //
+ 
+
+
     
     
