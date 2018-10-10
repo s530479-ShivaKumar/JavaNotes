@@ -120,6 +120,14 @@ Top level classes can use
 3. abstract // we cannot create a object for this class
 4. final // we cannot extend this class
 5. strictfp //
+
+additional modifiers
+1. private :  only in the same class
+2. Protected : Anywhere in the the package and for only child classes
+                MAny loop holes in protected modifier // video 29 -21/02
+                
+                In other packages we can access protected by only child class references. // most important
+                pic 2
  
 
 
