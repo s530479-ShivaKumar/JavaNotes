@@ -130,7 +130,8 @@ additional modifiers
                 pic 2
                 
             
- 
+--------Interfaces-----------------
+// static methods cannot be overided when they have 2 same methods in 2 interfaces with differenet erturn types.
 
 
 most important:  
