@@ -131,8 +131,18 @@ additional modifiers
                 
             
 --------Interfaces-----------------
-// static methods cannot be overided when they have 2 same methods in 2 interfaces with differenet erturn types.
+// methods cannot be overided when they have 2 same methods in 2 interfaces with differenet return types.
+// Same as above
+-- Java class cannot implement 2 interfaces with same method name and different return types --23/02.
 
+// Static methods cannot be overrided in the implementation class as they are not available to the implementation class //most important
+Marker Interface: An interface with no methods and the objects implementing interface get some properties.
 
 most important:  
 https://www.geeksforgeeks.org/can-we-overload-or-override-static-methods-in-java/ 
+
+--------OOPs Concepts----------------
+1. Data hiding : Internal data not exposed directly to outside // can be achieved by using private modifier.
+2. Abstraction : Hiding implementation // Security and enhancement is easy.
+3. Encapsulation : Process of binding variables(data) and methods into a single unit is known as encapsulation. // every class is an example of encapsulation.
+         Encapsulation = Data Hiding + Astraction.
