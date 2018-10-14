@@ -146,3 +146,125 @@ https://www.geeksforgeeks.org/can-we-overload-or-override-static-methods-in-java
 2. Abstraction : Hiding implementation // Security and enhancement is easy.
 3. Encapsulation : Process of binding variables(data) and methods into a single unit is known as encapsulation. // every class is an example of encapsulation.
          Encapsulation = Data Hiding + Astraction.
+         
+video 03/03/2018 - most important for overloadig concepts. 
+ex:
+m1(String){
+sout "str"
+}
+m1(Object){
+sout "obj"
+}
+if we call m1("shiva") then str will be printed.
+"shiva" - string is child class of object. Child class objects will be considered first for overoading.
+overloading selects the method by refererence type by compiler not the object type-- object type method is selected in overrifing concept by JVM in runtime execution.
+Hence overloading is also know as static polymorphism, early binding, compile time polymorphism.
+
+overriding video -05/03/18 some important rules
+
+exception handling in parent to child methods:
+if a child class throws a Checked exception then parent class must throw same exception or its parent class exceptions.
+
+static methods should be overrided by static methods only. This is not overriding. it is method hiding.
+P p = new P --------- Parent
+C c = new C --------- Child
+P p1 = new C -------- Parent // most important point --When data hiding methods are called based on reference type.
+
+For variables : it is called by the reference type. there is no run time selection.
+must and sure example:
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication34;
+
+/**
+ *
+ * @author Shiva Kumar Mutukula
+ */
+public class Parent {
+    
+    int x = 100;
+    static int y = 200;
+
+    public Parent() {
+        System.out.println("parent constructor");
+    }
+    static{
+        System.out.println("parent static block ");
+    }
+    
+    public void m1(){
+        System.out.println("javaapplication34.Parent.m1()");
+    }
+    public static void PtStaticMethod(){
+        System.out.println("parent static method");
+    }
+    
+}
+
+public class JavaApplication34 extends Parent{
+    int x = 300;
+    static int y = 400;
+
+    /**
+     * @param args the command line arguments
+     */
+    static{
+        System.out.println("child static block");
+    }
+    public static void PtStaticMethod(){
+        System.out.println("child static method");
+    }
+    public JavaApplication34(){
+        System.out.println("child constructor");
+    }
+        public void m1(){
+        System.out.println("javaapplication34.Child.m1()");
+    }
+//
+//    public static void main(int[] arg) {
+//        System.out.println("javaapplication34.JavaApplication34.main()");
+//    }
+    public static void main(String[] args) {
+//        PtStaticMethod();
+        
+        JavaApplication34 j34 = new JavaApplication34();
+        Parent p = new Parent();
+        Parent pc = new JavaApplication34();
+        
+        j34.m1();
+        p.m1();
+        pc.m1();
+        j34.PtStaticMethod();
+        p.PtStaticMethod();
+        pc.PtStaticMethod();
+        System.out.println(j34.x);
+        System.out.println(j34.y);
+        System.out.println(p.x);
+        System.out.println(p.y);
+        System.out.println(pc.x);
+        System.out.println(pc.y);
+ }
+ Output:
+ parent static block 
+child static block
+parent constructor
+child constructor
+parent constructor
+parent constructor
+child constructor
+javaapplication34.Child.m1()
+javaapplication34.Parent.m1()
+javaapplication34.Child.m1()
+child static method
+parent static method
+parent static method
+300
+400
+100
+200
+100
+200
+
