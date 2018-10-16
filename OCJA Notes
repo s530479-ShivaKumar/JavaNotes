@@ -277,5 +277,7 @@ if we put a return type to the constructor it is not the error the compiler thin
 
 recrsive call to constructors is a compile time error as compiler checks. but for methods its a runtime exception as stackoverflow
 
+----exception handling--------
+
 
 
