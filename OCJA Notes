@@ -161,9 +161,13 @@ overloading selects the method by refererence type by compiler not the object ty
 Hence overloading is also know as static polymorphism, early binding, compile time polymorphism.
 
 overriding video -05/03/18 some important rules
-
+1.method signatures must be same
+2.reutrn type of child can be a co varient type
+3.we cannot reduce the scope of the overriding method
+4.we cannot override final method
+5.we cannot override private methods as it is not availabe to the child class
 exception handling in parent to child methods:
-if a child class throws a Checked exception then parent class must throw same exception or its parent class exceptions.
+6.if a child class throws a Checked exception then parent class must throw same exception or its parent class exceptions.
 
 static methods should be overrided by static methods only. This is not overriding. it is method hiding.
 P p = new P --------- Parent
@@ -267,4 +271,11 @@ parent static method
 200
 100
 200
+
+-------------Constructor----------------
+if we put a return type to the constructor it is not the error the compiler thinks it as a different method and executes the program.
+
+recrsive call to constructors is a compile time error as compiler checks. but for methods its a runtime exception as stackoverflow
+
+
 
