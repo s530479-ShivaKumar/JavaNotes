@@ -279,5 +279,17 @@ recrsive call to constructors is a compile time error as compiler checks. but fo
 
 ----exception handling--------
 
-
+return in finally is the dominant.
+try{
+    return 1;
+   }
+catch{
+    return 2;
+    }
+ finally {
+    return 3;
+    }
+ ans// 3 -- Though there is no exception finally block return will be the answer.
+ 
+ throw - to handover our created exception object to the jvm manually.
 
