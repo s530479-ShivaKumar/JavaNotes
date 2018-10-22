@@ -292,4 +292,15 @@ catch{
  ans// 3 -- Though there is no exception finally block return will be the answer.
  
  throw - to handover our created exception object to the jvm manually.
+ 
+ most important // String s = "Shiva"
+                   StringBuilder sb = "Shiva"
+                   s==sb ------compile time error // touse == arguments should have some relation parent-child or child-parent
+                   s.equals(sb) -- no compiletime error // eqals method returns false when we compare b/w differerent objects.
+valueOf()--to convert primitive to wrapper object
+valueOf()  -- string to wrapper object
+xxxValue() -- wrapper object to primitive
+toString() -- primitive to string and wrapper object to string
+parsexxx() -- String to primitive
 
+         
