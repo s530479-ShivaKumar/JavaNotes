@@ -3,9 +3,20 @@ Data types
 Literals
 Array
 
-![image](https://user-images.githubusercontent.com/31738370/48218836-69fedf80-e350-11e8-9c57-8a24e4685c82.png)
+JDK = JRE + Developement tools.
+JRE = JVM + class libraries.
+JVM - platform dependent // WE have JVM for each platform
+                            JDK
 
-
+     JRE                       +                      DEvelopment tools
+jvm + CLASS LIBRARIES
+---------------------------------------------------------------
+                    java application(PID) .java file
+                    compiler compiles .java
+                    Bytecode (PID) .class file
+                    
+   JVM for windows          JVM for Linux       JVM for MAC                 
+            Convert in to machine specific code
 
 
 -----Data Types--------
