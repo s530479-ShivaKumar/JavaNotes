@@ -2,6 +2,8 @@ Java features
 Data types
 Literals
 Array
+instance variable - memory is not allocated till object is created
+Class variable - has memomry before object creation (Static)
 
 JDK = JRE + Developement tools.
 JRE = JVM + class libraries.
